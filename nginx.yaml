@@ -4,21 +4,21 @@ metadata:
   name: nginx-config
 data:
   nginx.conf: |
-  events {}
-  http {
-    server {
-      listen 80;
-      location / {
-        proxy_pas http://flask-service:550;
-      }
-      location /fen {
-        return 200 "Meow Meow Meow";
-      }
-      location /moss {
-        return 200 "Woof Woof Woof"; 
+    events {}
+    http {
+      server {
+        listen 80;
+        location / {
+          proxy_pas http://flask-service:550;
+        }
+        location /fen {
+          return 200 "Meow Meow Meow";
+        }
+        location /moss {
+          return 200 "Woof Woof Woof"; 
+        }
       }
     }
-  }
 ---
 apiVersion: apps/v1
 kind: Deployment
