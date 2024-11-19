@@ -19,6 +19,6 @@ metadata:
       imagePullPolicy: Always
       ports:
       - containerPort: 5500
-      env:
+        env:
       - name: YOUR_NAME
-      value: Magos
+        value: Magos
