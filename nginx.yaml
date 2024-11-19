@@ -9,7 +9,7 @@ data:
       server {
         listen 80;
         location / {
-          proxy_pass http://flask-service:550;
+          proxy_pass http://flask-service:5500;
         }
         location /fen {
           return 200 "Meow Meow Meow";
